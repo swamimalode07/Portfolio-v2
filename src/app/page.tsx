@@ -50,10 +50,11 @@ const page = () => {
                 title="Frontend Developer"
                 type="Freelance"
                 highlights={[
-                  "Created Quaric Brand Identity.",
-                  "Developed the Quaric Design System to standardize design practices and accelerate development.",
+                  "Worked as a Frontend Developer, transforming Figma design into fully responsive, high-performance website ",
+                  " Implemented core SEO features: lazy loading, WebP images, clean URLs, meta tags, Open Graph, and accessibility. ",
+                  "Set up essential SEO infrastructure that includes robots.txt, dynamic sitemap.xml, and crawlable internal links.",
                 ]}
-                skills={["Next.js", "TailwindCSS", "Framer Motion"]}
+                skills={["HTML", "TailwindCSS", "SEO"]}
               />
               <Separator />
               <Heading heading="About Me" />

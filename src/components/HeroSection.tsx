@@ -1,5 +1,5 @@
 import React from "react";
-import { FileDown } from "lucide-react";
+import { FileDown, Calendar } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -7,10 +7,10 @@ const HeroSection = () => {
       <div className="border-b-2 border-[#1C1C1F] bg-black">
         <div className="px-4 pt-4 sm:px-6 sm:pt-6 md:ml-4 md:px-0 md:pt-4">
           <div className="mb-20 flex max-w-7xl flex-col items-start justify-center pt-10 text-white sm:mt-18 md:pt-0 lg:mt-6">
-            <p className="font-space-grotesk text-4xl leading-tight font-bold sm:h-[px] sm:text-6xl md:h-[px] md:text-7xl lg:h-[px] lg:text-8xl xl:h-[px] xl:text-[130px]">
+            <p className="font-space-grotesk text-4xl leading-tight font-bold sm:text-6xl md:text-7xl lg:text-8xl xl:text-[130px]">
               I&apos;m Swami
             </p>
-            <p className="font-space-grotesk text-4xl leading-tight font-bold sm:-mt-4 sm:text-6xl md:-mt-6 md:text-7xl lg:-mt-2 lg:text-8xl xl:-mt-10 xl:text-[130px]">
+            <p className="font-space-grotesk text-4xl leading-tight font-bold sm:-mt-4 md:-mt-6 lg:-mt-2 xl:-mt-10 sm:text-6xl md:text-7xl lg:text-8xl xl:text-[130px]">
               I build for the web.
             </p>
 
@@ -19,18 +19,35 @@ const HeroSection = () => {
               always looking for new opportunities to learn and grow.
             </p>
 
-            <a
-              href="/resume.pdf"
-              download="Swami-Malode-Resume.pdf"
-              className="font-space-grotesk-500 mt-4 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm transition-all hover:border-[#5A5A5A] hover:bg-[#2C2C2C] sm:mt-6 sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:mt-8 md:px-8 md:py-3"
-            >
-              <span>Download Resume</span>
-              <FileDown
-                size={18}
-                strokeWidth={1.25}
-                className="text-gray-300 sm:h-5 sm:w-5 md:h-[22px] md:w-[22px]"
-              />
-            </a>
+            <div className="mt-4 flex flex-wrap gap-4 sm:mt-6 md:mt-8">
+            
+              <a
+                href="/resume.pdf"
+                download="Swami-Malode-Resume.pdf"
+                className="font-space-grotesk-500 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm transition-all hover:border-[#5A5A5A] hover:bg-[#2C2C2C] sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3"
+              >
+                <span>Download Resume</span>
+                <FileDown
+                  size={18}
+                  strokeWidth={1.25}
+                  className="text-gray-300 sm:h-5 sm:w-5 md:h-[22px] md:w-[22px]"
+                />
+              </a>
+
+              <a
+                href="https://cal.com/swamimalode"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-space-grotesk-500 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm text-white transition-all hover:bg-[#005BB5] sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3"
+              >
+                <span>Book a Meet</span>
+                <Calendar
+                  size={18}
+                  strokeWidth={1.25}
+                  className="sm:h-5 sm:w-5 md:h-[22px] md:w-[22px]"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </div>
