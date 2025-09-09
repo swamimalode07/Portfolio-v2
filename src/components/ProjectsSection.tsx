@@ -13,19 +13,19 @@ const ProjectsSection = () => {
         title="Layers  Landing Page"
         description="Animated landing page."
         image="/layers.png"
-          url="https://google.com"
+          url="https://landing.swamimalode.online/"
       />
       <ProjectsCard
         title="GhostType"
         description="Minimalist Typing website."
         image="/ghosttype.png"
-        url="https://google.com"
+        url="https://ghosttype.swamimalode.online/"
       />
       <ProjectsCard
         title="Anieditor"
         description="Anime Overlay Editor."
         image="/anieditor.png"
-        url="https://google.com"
+        url="https://anieditor.swamimalode.online/"
       />
     </>
   );
