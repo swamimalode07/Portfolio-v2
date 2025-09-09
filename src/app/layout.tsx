@@ -33,9 +33,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+           <link rel="icon" href="/logo.png" className="rounded-full" />
       <body
         className={` ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
+      
         {children}
         <CustomCursor />
         <Taskbar />
