@@ -117,7 +117,7 @@ const ProjectsPage = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)]">
+    <div className="bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)] font-space-grotesk">
       <div className="mx-auto w-[80%] border-r-2 border-l-2 border-[#1C1C1F] bg-black text-white">
     
         <div className="border-b border-[#1C1C1F]">
@@ -128,7 +128,7 @@ const ProjectsPage = () => {
               </h1>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 rounded-lg border-2 px-3 py-2 text-sm text-white transition-colors hover:text-white"
+                className="inline-flex items-center gap-2 rounded-lg  px-3 py-2 text-sm text-white border-2 border-[#494949] transition-colors hover:text-white"
               >
                 <ArrowLeft size={18} /> Back
               </Link>

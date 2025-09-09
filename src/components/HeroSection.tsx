@@ -38,7 +38,7 @@ const HeroSection = () => {
                 href="https://cal.com/swamimalode"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-space-grotesk-500 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm text-white transition-all hover:bg-[#005BB5] sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3"
+                className="font-space-grotesk-500 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm text-white transition-all hover:bg-[#2C2C2C] hover:border-[#5A5A5A] sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3"
               >
                 <span>Book a Meet</span>
                 <Calendar

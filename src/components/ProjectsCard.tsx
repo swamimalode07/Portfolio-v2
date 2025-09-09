@@ -36,7 +36,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
   };
 
   return (
-    <div className="relative">
+    <div className="relative font-space-grotesk">
       <div
         ref={cardRef}
         className={`relative bg-black pb-6 transition-all duration-300 ${url ? "cursor-pointer" : ""} `}
@@ -89,7 +89,6 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
             Visit Site
             <ArrowUpRight size={16} className="opacity-80" />
             <div className="absolute top-full left-1/2 -translate-x-1/2">
-              <div className="h-2 w-2 rotate-45 border-r border-b border-gray-700 bg-[#1C1C1F]/95"></div>
             </div>
           </div>
         )}

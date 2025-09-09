@@ -8,7 +8,7 @@ const Page = () => {
   const router = useRouter();
 
   return (
-    <div className="max-w-7xl mx-auto border-l border-r border-[#27272a] bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)]">
+    <div className="max-w-7xl mx-auto border-l border-r border-[#27272a] bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)] font-space-grotesk">
       <div className="min-h-screen mx-auto">
         <div className="border-b-2 border-[#1C1C1F]">
           <div className="pt-16 sm:pt-20 md:pt-24 px-4 sm:px-6 md:ml-4 md:px-0">

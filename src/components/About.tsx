@@ -3,7 +3,7 @@ import { ArrowUpRight } from "lucide-react";
 
 const About = () => {
   return (
-    <section className="bg-black text-gray-300">
+    <section className="bg-black text-gray-300 font-space-grotesk">
       <div className="px-4 sm:px-[5%] mt-0 py-6">
         <p className="mb-4 sm:mb-6 leading-relaxed text-base sm:text-lg md:text-xl text-[#A6A6A6]">
           I’m a UI/UX Designer and Full Stack Developer based in India, currently

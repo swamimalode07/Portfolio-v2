@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 
 const ContactSection = () => {
   return (
-    <section className="bg-black text-center py-34 px-[5%] font-space-grotesk-600">
+    <section className="bg-black text-center py-34 px-[5%] font-space-grotesk">
       <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
         Let’s work together
       </h2>

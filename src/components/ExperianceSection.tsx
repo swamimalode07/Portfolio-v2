@@ -26,7 +26,7 @@ const ExperienceSection: React.FC<ExperienceProps> = ({
   const toggleExpansion = () => setIsExpanded((prev) => !prev);
 
   return (
-    <div className="border-b border-[#1C1C1F]">
+    <div className="border-b border-[#1C1C1F] font-space-grotesk">
       
       <div
         onClick={toggleExpansion}
