@@ -90,7 +90,7 @@ const Taskbar = () => {
             fontSize="12"
             fill="#ffffff"
           >
-            Cal
+            Cal.
           </text>
         </svg>
       </a>
