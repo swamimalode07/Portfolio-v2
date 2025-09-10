@@ -8,15 +8,14 @@ const HeroSection = () => {
         <div className="px-4 pt-4 sm:px-6 sm:pt-6 md:ml-4 md:px-0 md:pt-4">
           <div className="mb-20 flex max-w-7xl flex-col items-start justify-center pt-10 text-white sm:mt-18 md:pt-0 lg:mt-6">
             <p className="font-space-grotesk text-4xl leading-tight font-bold sm:text-6xl md:text-7xl lg:text-8xl xl:text-[130px]">
-              I&apos;m Swami
+              Hi I&apos;m Swami
             </p>
             <p className="font-space-grotesk text-4xl leading-tight font-bold sm:-mt-4 md:-mt-6 lg:-mt-2 xl:-mt-10 sm:text-6xl md:text-7xl lg:text-8xl xl:text-[130px]">
               I build for the web.
             </p>
 
             <p className="font-space-grotesk mt-4 w-full text-sm text-[#A4A4A4] sm:mt-6 sm:w-[80%] sm:text-base md:mt-8 md:w-[70%] md:text-lg lg:w-[60%] lg:text-xl xl:w-[45%] xl:text-2xl">
-              That means I can create good looking and functional websites. I'm
-              always looking for new opportunities to learn and grow.
+             I build exceptional digital experiences with modern technologies. Specialized in Full Stack Development and UI & UX Design
             </p>
 
             <div className="mt-4 flex flex-wrap gap-3 sm:mt-6 md:mt-8">
