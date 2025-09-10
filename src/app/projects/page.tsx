@@ -26,7 +26,7 @@ const ProjectsPage = () => {
       year: "2025",
       image: "/ghosttype.png",
       github: "swamimalode07/ghosttype",
-      live: "https://ghosttype.swamimalode.online", 
+      live: "https://ghosttype.swamimalode.online",
     },
     {
       id: 2,
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       description:
         "Landing page for a SaaS, with interactive Animations made using Tailwind CSS and Framer motion",
       category: "frontend",
-      technologies: ["Next.js", "Framer motion", "Tailwind","Typescript"],
+      technologies: ["Next.js", "Framer motion", "Tailwind", "Typescript"],
       year: "2025",
       image: "/layers.png",
       github: "swamimalode07/SaaS-Landing-Page",
@@ -70,7 +70,7 @@ const ProjectsPage = () => {
       description:
         "A interactive memory game with features that also include a leaderboard with 400+ users.",
       category: "fullstack",
-      technologies: ["HTML", "CSS", "Node.jsx", "Express"," MongoDB"],
+      technologies: ["HTML", "CSS", "Node.jsx", "Express", " MongoDB"],
       year: "2024",
       image: "/simon.png",
       github: "swamimalode07/SimonsaysGame",
@@ -85,7 +85,7 @@ const ProjectsPage = () => {
       technologies: ["HTML", "Tailwind"],
       year: "2025",
       image: "/mach.png",
-     
+
       live: "https://mach5.io",
     },
   ];
@@ -117,9 +117,8 @@ const ProjectsPage = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="bg-black max-w-7xl mx-auto bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)] font-space-grotesk">
+    <div className="font-space-grotesk mx-auto max-w-7xl bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)]">
       <div className="mx-auto w-[80%] border-r-2 border-l-2 border-[#1C1C1F] bg-black text-white">
-    
         <div className="border-b border-[#1C1C1F]">
           <div className="mx-auto max-w-5xl px-6 py-10">
             <div className="mb-6 flex flex-col items-start justify-between gap-4 sm:flex-row sm:items-center">
@@ -128,7 +127,7 @@ const ProjectsPage = () => {
               </h1>
               <Link
                 href="/"
-                className="inline-flex items-center gap-2 rounded-lg  px-3 py-2 text-sm text-white border-2 border-[#494949] transition-colors hover:text-white"
+                className="inline-flex items-center gap-2 rounded-lg border-2 border-[#494949] px-3 py-2 text-sm text-white transition-colors hover:text-white"
               >
                 <ArrowLeft size={18} /> Back
               </Link>
@@ -159,10 +158,9 @@ const ProjectsPage = () => {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
             {filteredProjects.map((project) => (
               <div
-  key={project.id}
-  className="group flex flex-col overflow-hidden rounded-xl border border-[#1C1C1F] bg-[#0A0A0A] transition-all duration-500 hover:-translate-y-2 hover:transform hover:border-[#333] hover:shadow-2xl hover:shadow-black/50"
->
-
+                key={project.id}
+                className="group flex flex-col overflow-hidden rounded-xl border border-[#1C1C1F] bg-[#0A0A0A] transition-all duration-500 hover:-translate-y-2 hover:transform hover:border-[#333] hover:shadow-2xl hover:shadow-black/50"
+              >
                 <div className="relative aspect-[4/2] overflow-hidden bg-[#111]">
                   <img
                     src={
@@ -203,25 +201,24 @@ const ProjectsPage = () => {
                   </div>
                 </div>
 
-                <div className="p-6 flex flex-col flex-1">
-  <h3 className="font-space-grotesk-600 mb-3 text-xl font-bold transition-colors duration-300 group-hover:text-[#CCC]">
-    {project.title}
-  </h3>
-  <p className="font-space-grotesk-400 mb-4 text-sm leading-relaxed text-[#666]">
-    {project.description}
-  </p>
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="font-space-grotesk-600 mb-3 text-xl font-bold transition-colors duration-300 group-hover:text-[#CCC]">
+                    {project.title}
+                  </h3>
+                  <p className="font-space-grotesk-400 mb-4 text-sm leading-relaxed text-[#666]">
+                    {project.description}
+                  </p>
 
-  <div className="mb-4 flex flex-wrap gap-2">
-    {project.technologies.map((tech) => (
-      <span
-        key={tech}
-        className="font-space-grotesk-400 rounded-full border border-[#1C1C1F] bg-[#111] px-2 py-1 text-xs text-[#888]"
-      >
-        {tech}
-      </span>
-    ))}
-  </div>
-
+                  <div className="mb-4 flex flex-wrap gap-2">
+                    {project.technologies.map((tech) => (
+                      <span
+                        key={tech}
+                        className="font-space-grotesk-400 rounded-full border border-[#1C1C1F] bg-[#111] px-2 py-1 text-xs text-[#888]"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
 
                   <div className="mt-auto flex w-full flex-col gap-3 sm:flex-row">
                     {project.live && (
@@ -261,7 +258,7 @@ const ProjectsPage = () => {
                             </svg>
                           </span>
                         ) : (
-                        <span className="flex items-center gap-1">
+                          <span className="flex items-center gap-1">
                             0
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
