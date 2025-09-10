@@ -4,6 +4,8 @@ import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import { Analytics } from "@vercel/analytics/next"
+import { Databuddy } from '@databuddy/sdk';
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,6 +42,19 @@ export default function RootLayout({
       
         {children}
         <Analytics />
+          <Databuddy
+        clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID as string}
+        trackHashChanges={true}
+        trackAttributes={true}
+        trackInteractions={true}
+        trackEngagement={true}
+        trackScrollDepth={true}
+        trackExitIntent={true}
+        trackBounceRate={true}
+        trackWebVitals={true}
+        trackErrors={true}
+        enableBatching={true}
+      />
         <CustomCursor />
        
       </body>
