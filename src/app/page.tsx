@@ -36,7 +36,7 @@ const page = () => {
               <Heading heading="Experience" />
               <ExperienceSection
                 logo="/conduit.png"
-                title="Full Stack  Development Intern"
+                title="Full Stack  Developer"
                 type="Internship"
                 highlights={[
                   "Working on Frontend and Backend development for Conduit.",

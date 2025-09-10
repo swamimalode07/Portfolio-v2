@@ -17,7 +17,7 @@ const Page = () => {
               <div className="flex w-full items-center justify-between mb-8">
                 <div className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#494949] bg-[#1C1C1C]">
                   <span className="text-sm text-[#A4A4A4] font-space-grotesk-400">
-                    🔥 Cooking
+                    🔥 Coming soon
                   </span>
                 </div>
 
