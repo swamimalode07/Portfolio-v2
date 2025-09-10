@@ -42,7 +42,7 @@ const Taskbar = () => {
           strokeLinecap="round"
           strokeLinejoin="round"
         >
-          <rect x="2" y="9" width="4" height="12" /> 
+          <rect x="2" y="9" width="4" height="12" />
           <circle cx="4" cy="4" r="2" />
           <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />{" "}
         </svg>
@@ -89,6 +89,7 @@ const Taskbar = () => {
             fontFamily="Arial, sans-serif"
             fontSize="12"
             fill="#ffffff"
+            fontWeight="bold"
           >
             Cal.
           </text>
@@ -100,11 +101,13 @@ const Taskbar = () => {
         onMouseLeave={() => setHovered(false)}
         className="mr-2 ml-1 flex items-center gap-2"
       >
-       
-        <div className="h-3 w-3 animate-pulse rounded-full bg-green-500"></div>
+        <div className="relative flex items-center justify-center">
+          <span className="absolute inline-flex h-3 w-3 animate-ping rounded-full bg-green-500 opacity-75"></span>
+          <span className="relative inline-flex h-3 w-3 rounded-full bg-green-500 shadow-[0_0_8px_2px_rgba(34,197,94,0.6)]"></span>
+        </div>
 
         <span
-          className={`font-space-grotesk mb-0.5 overflow-hidden text-sm font-medium whitespace-nowrap text-white transition-all duration-800 ease-in-out ${
+          className={`font-space-grotesk ml-1 overflow-hidden text-sm  font-medium whitespace-nowrap text-white transition-all duration-800 ease-in-out ${
             hovered ? "max-w-xs opacity-100" : "max-w-0 opacity-0"
           }`}
         >

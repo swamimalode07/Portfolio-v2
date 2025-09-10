@@ -1,10 +1,10 @@
 import React from 'react';
-import Link from 'next/link'; // 👈 use if you're in Next.js, otherwise replace with <a>
+import Link from 'next/link'; 
 
 interface HeadingProps {
   heading: string;
-  showButton?: boolean;   // optional
-  buttonLink?: string;    // optional link
+  showButton?: boolean; 
+  buttonLink?: string;    
 }
 
 const Heading: React.FC<HeadingProps> = ({ heading, showButton, buttonLink }) => {

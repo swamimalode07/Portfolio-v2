@@ -3,7 +3,6 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
-import Taskbar from "@/components/Taskbar";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -33,14 +32,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-           <link rel="icon" href="/logo.png" className="rounded-full" />
+           <link rel="icon" href="/logo.png" className="" />
       <body
         className={` ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
       
         {children}
         <CustomCursor />
-        <Taskbar />
+       
       </body>
     </html>
   );

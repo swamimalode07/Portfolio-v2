@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       description:
         "Landing page for a SaaS, with interactive Animations made using Tailwind CSS and Framer motion",
       category: "frontend",
-      technologies: ["Vue.js", "Firebase", "Tailwind"],
+      technologies: ["Next.js", "Framer motion", "Tailwind","Typescript"],
       year: "2025",
       image: "/layers.png",
       github: "swamimalode07/SaaS-Landing-Page",

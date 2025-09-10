@@ -19,7 +19,7 @@ const HeroSection = () => {
               always looking for new opportunities to learn and grow.
             </p>
 
-            <div className="mt-4 flex flex-wrap gap-4 sm:mt-6 md:mt-8">
+            <div className="mt-4 flex flex-wrap gap-3 sm:mt-6 md:mt-8">
             
               <a
                 href="/resume.pdf"

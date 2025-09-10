@@ -2,7 +2,6 @@
 import About from "@/components/About";
 import ContactSection from "@/components/ContactSection";
 import Container from "@/components/Container";
-import CustomCursor from "@/components/CustomCursor";
 import ExperienceSection from "@/components/ExperianceSection";
 import Heading from "@/components/Heading";
 import HeroSection from "@/components/HeroSection";
@@ -13,6 +12,7 @@ import SkillsSection from "@/components/SkillsSection";
 import React from "react";
 import LoadingScreen from "@/components/LoadingScreen";
 import { useState } from "react";
+import Taskbar from "@/components/Taskbar";
 
 const page = () => {
   const [loading, setLoading] = useState(true);
@@ -65,6 +65,8 @@ const page = () => {
           </Container>
         </div>
       )}
+     {loading ||   <Taskbar />}
+      
     </>
   );
 };

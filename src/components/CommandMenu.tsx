@@ -2,12 +2,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import {
   Search,
-  Hash,
-  User,
   Folder,
   Palette,
-  Mail,
-  Home,
   LucideIcon,
   X,
 } from "lucide-react";
