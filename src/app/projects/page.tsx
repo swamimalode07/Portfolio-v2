@@ -117,7 +117,7 @@ const ProjectsPage = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)] font-space-grotesk">
+    <div className="bg-black max-w-7xl mx-auto bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)] font-space-grotesk">
       <div className="mx-auto w-[80%] border-r-2 border-l-2 border-[#1C1C1F] bg-black text-white">
     
         <div className="border-b border-[#1C1C1F]">
@@ -159,9 +159,10 @@ const ProjectsPage = () => {
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
             {filteredProjects.map((project) => (
               <div
-                key={project.id}
-                className="group overflow-hidden rounded-xl border border-[#1C1C1F] bg-[#0A0A0A] transition-all duration-500 hover:-translate-y-2 hover:transform hover:border-[#333] hover:shadow-2xl hover:shadow-black/50"
-              >
+  key={project.id}
+  className="group flex flex-col overflow-hidden rounded-xl border border-[#1C1C1F] bg-[#0A0A0A] transition-all duration-500 hover:-translate-y-2 hover:transform hover:border-[#333] hover:shadow-2xl hover:shadow-black/50"
+>
+
                 <div className="relative aspect-[4/2] overflow-hidden bg-[#111]">
                   <img
                     src={
@@ -202,26 +203,27 @@ const ProjectsPage = () => {
                   </div>
                 </div>
 
-                <div className="p-6">
-                  <h3 className="font-space-grotesk-600 mb-3 text-xl font-bold transition-colors duration-300 group-hover:text-[#CCC]">
-                    {project.title}
-                  </h3>
-                  <p className="font-space-grotesk-400 mb-4 text-sm leading-relaxed text-[#666]">
-                    {project.description}
-                  </p>
+                <div className="p-6 flex flex-col flex-1">
+  <h3 className="font-space-grotesk-600 mb-3 text-xl font-bold transition-colors duration-300 group-hover:text-[#CCC]">
+    {project.title}
+  </h3>
+  <p className="font-space-grotesk-400 mb-4 text-sm leading-relaxed text-[#666]">
+    {project.description}
+  </p>
 
-                  <div className="mb-4 flex flex-wrap gap-2">
-                    {project.technologies.map((tech) => (
-                      <span
-                        key={tech}
-                        className="font-space-grotesk-400 rounded-full border border-[#1C1C1F] bg-[#111] px-2 py-1 text-xs text-[#888]"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
+  <div className="mb-4 flex flex-wrap gap-2">
+    {project.technologies.map((tech) => (
+      <span
+        key={tech}
+        className="font-space-grotesk-400 rounded-full border border-[#1C1C1F] bg-[#111] px-2 py-1 text-xs text-[#888]"
+      >
+        {tech}
+      </span>
+    ))}
+  </div>
 
-                  <div className="flex w-full flex-col gap-3 sm:flex-row">
+
+                  <div className="mt-auto flex w-full flex-col gap-3 sm:flex-row">
                     {project.live && (
                       <a
                         href={project.live}
