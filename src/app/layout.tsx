@@ -22,9 +22,18 @@ const spaceGrotesk = Space_Grotesk({
   variable: "--font-space-grotesk",
   display: "swap",
 });
+
 export const metadata: Metadata = {
   title: "Swami Malode",
   description: "Swami's Portfolio site.",
+  keywords: [
+    "Frontend Developer",
+    "UI/UX Designer",
+    "Next.js Portfolio",
+    "React Developer",
+    "Tailwind CSS",
+    "Swami Malode",
+  ],
   openGraph: {
     title: "Swami's Portfolio",
     description: "Swami's Portfolio site.",
@@ -50,19 +59,42 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <link rel="icon" href="/logo.ico" className="" />
+      <head>
+    
+        <link rel="canonical" href="https://swamimalode.online" />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Swami Malode",
+              url: "https://swamimalode.online",
+              sameAs: [
+                "https://github.com/swamimalode07",
+                "https://linkedin.com/in/swamimalode",
+                "https://x.com/swamimalode",
+              ],
+              jobTitle: "Frontend Developer & UI/UX Designer",
+              image: "https://swamimalode.online/opengraphh.jpg",
+            }),
+          }}
+        />
+      </head>
+
+      <link rel="icon" href="/logo.ico" />
+
       <body
         className={` ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
         {children}
+
         <Analytics />
+
         <Databuddy
           clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID as string}
           trackHashChanges={true}
@@ -76,6 +108,7 @@ export default function RootLayout({
           trackErrors={true}
           enableBatching={true}
         />
+
         <CustomCursor />
       </body>
     </html>
