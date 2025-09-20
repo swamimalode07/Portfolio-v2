@@ -23,7 +23,7 @@
   --font-geist-mono: var(--font-geist-mono), monospace;
 }
 
-/* Set base styles */
+
 @layer base {
   body {
     background: var(--background);

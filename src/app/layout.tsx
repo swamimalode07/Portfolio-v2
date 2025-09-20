@@ -3,9 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { Space_Grotesk } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
-import { Analytics } from "@vercel/analytics/next"
-import { Databuddy } from '@databuddy/sdk';
-
+import { Analytics } from "@vercel/analytics/next";
+import { Databuddy } from "@databuddy/sdk";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +24,30 @@ const spaceGrotesk = Space_Grotesk({
 });
 export const metadata: Metadata = {
   title: "Swami Malode",
-  description: "Swami Malode's portfolio website",
+  description: "Swami's Portfolio site.",
+  openGraph: {
+    title: "Swami's Portfolio",
+    description: "Swami's Portfolio site.",
+    url: "https://swamimalode.online",
+    siteName: "Swami's Portfolio site",
+    images: [
+      {
+        url: "https://swamimalode.online/opengraphh.jpg",
+        width: 1200,
+        height: 630,
+        alt: "My OG Image",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "My portfoliosite",
+    description: "This is my portfolio.",
+    images: ["https://swamimalode.online/opengraphh.jpg"],
+    creator: "@SwamiMalode",
+  },
 };
 
 export default function RootLayout({
@@ -35,28 +57,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-           <link rel="icon" href="/logo.png" className="" />
+      <link rel="icon" href="/logo.ico" className="" />
       <body
         className={` ${geistSans.variable} ${geistMono.variable} ${spaceGrotesk.variable} antialiased`}
       >
-      
         {children}
         <Analytics />
-          <Databuddy
-        clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID as string}
-        trackHashChanges={true}
-        trackAttributes={true}
-        trackInteractions={true}
-        trackEngagement={true}
-        trackScrollDepth={true}
-        trackExitIntent={true}
-        trackBounceRate={true}
-        trackWebVitals={true}
-        trackErrors={true}
-        enableBatching={true}
-      />
+        <Databuddy
+          clientId={process.env.NEXT_PUBLIC_DATABUDDY_CLIENT_ID as string}
+          trackHashChanges={true}
+          trackAttributes={true}
+          trackInteractions={true}
+          trackEngagement={true}
+          trackScrollDepth={true}
+          trackExitIntent={true}
+          trackBounceRate={true}
+          trackWebVitals={true}
+          trackErrors={true}
+          enableBatching={true}
+        />
         <CustomCursor />
-       
       </body>
     </html>
   );
