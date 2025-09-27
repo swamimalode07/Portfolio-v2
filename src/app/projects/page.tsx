@@ -22,7 +22,7 @@ const ProjectsPage = () => {
       description:
         "A minimalistic typing test app designed to enhance your typing speed and accuracy with dynamic leaderboard.",
       category: "frontend",
-      technologies: ["React", "Tailwind", "Appwrite"],
+      technologies: ["React", "Tailwind CSS", "Appwrite"],
       year: "2025",
       image: "/ghosttype.png",
       github: "swamimalode07/ghosttype",
@@ -34,7 +34,7 @@ const ProjectsPage = () => {
       description:
         "Landing page for a SaaS, with interactive Animations made using Tailwind CSS and Framer motion",
       category: "frontend",
-      technologies: ["Next.js", "Framer motion", "Tailwind", "Typescript"],
+      technologies: ["Next.js", "Framer motion", "Tailwind CSS", "Typescript"],
       year: "2025",
       image: "/layers.png",
       github: "swamimalode07/SaaS-Landing-Page",
@@ -46,7 +46,7 @@ const ProjectsPage = () => {
       description:
         "A site that lets you apply Anime overlays above your Images also let's you add custom images.",
       category: "frontend",
-      technologies: ["React", "Tailwind"],
+      technologies: ["React", "Tailwind CSS"],
       year: "2025",
       image: "/anieditor.png",
       github: "swamimalode07/anieditor",
@@ -58,7 +58,7 @@ const ProjectsPage = () => {
       description:
         "A modern, multi-tenant status page for SaaS teams. Easily share incidents, maintenance, and uptime with users.",
       category: "fullstack",
-      technologies: ["React", "Go", "Tailwind", "PostgreSQL"],
+      technologies: ["React", "Go", "Tailwind CSS", "PostgreSQL"],
       year: "2025",
       image: "/clearstatus.png",
       github: "swamimalode07/clearstatus",
@@ -82,7 +82,7 @@ const ProjectsPage = () => {
       description:
         "Worked as a Frontend Developer, transforming Figma design into fully responsive web pages.",
       category: "freelance",
-      technologies: ["HTML", "Tailwind"],
+      technologies: ["HTML", "Tailwind CSS"],
       year: "2025",
       image: "/mach.png",
 
@@ -117,7 +117,7 @@ const ProjectsPage = () => {
       : projects.filter((project) => project.category === selectedCategory);
 
   return (
-    <div className="font-space-grotesk mx-auto max-w-7xl bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)]">
+    <div className="font-space-grotesk mx-auto bg-black bg-[repeating-linear-gradient(45deg,#000_0px,#000_7px,#1C1C1F_7px,#1C1C1F_8px)]">
       <div className="mx-auto w-[80%] border-r-2 border-l-2 border-[#1C1C1F] bg-black text-white">
         <div className="border-b border-[#1C1C1F]">
           <div className="mx-auto max-w-5xl px-6 py-10">
@@ -139,7 +139,7 @@ const ProjectsPage = () => {
         </div>
 
         <div className="mx-auto max-w-6xl px-6 py-10 sm:max-w-[80%]">
-          <div className="mb-12 flex w-fit gap-1 rounded-full border border-[#1C1C1F] p-1">
+          <div className="mb-12 flex w-fit gap-1 rounded-full border border-[#1C1C1F] p-1  mx-auto">
             {categories.map((category) => (
               <button
                 key={category.id}
@@ -240,41 +240,24 @@ const ProjectsPage = () => {
                         className="font-space-grotesk-500 flex flex-1 items-center justify-center gap-2 rounded-lg border border-[#333] bg-gradient-to-r from-[#1a1a1a] to-[#2a2a2a] px-4 py-2 text-sm text-white transition-all duration-300 hover:border-[#444] hover:from-[#2a2a2a] hover:to-[#2a2a2a]"
                       >
                         <GitHubIcon width={16} />
-                        <p>Github</p>(
-                        {stars[project.github] !== undefined ? (
-                          <span className="flex items-center gap-1">
-                            {stars[project.github]}
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              aria-hidden="true"
-                            >
-                              <polygon
-                                points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
-                                fill="#C79A00"
-                              />
-                            </svg>
+                        <p>Github</p>
+                        <span className="flex items-center gap-1">
+                          <span className="border-l border-gray-500 pl-2">
+                            {stars[project.github] ?? 0}
                           </span>
-                        ) : (
-                          <span className="flex items-center gap-1">
-                            0
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="20"
-                              height="20"
-                              viewBox="0 0 24 24"
-                              aria-hidden="true"
-                            >
-                              <polygon
-                                points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
-                                fill="#C79A00"
-                              />
-                            </svg>
-                          </span>
-                        )}
-                        )
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            viewBox="0 0 24 24"
+                            aria-hidden="true"
+                          >
+                            <polygon
+                              points="12,2 15,8.5 22,9.3 17,14 18.5,21 12,17.8 5.5,21 7,14 2,9.3 9,8.5"
+                              fill="#888" // gray color
+                            />
+                          </svg>
+                        </span>
                       </a>
                     )}
                   </div>

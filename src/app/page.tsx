@@ -42,7 +42,7 @@ const page = () => {
                   "Working on Frontend and Backend development for Conduit.",
                   "Working on modular codebase to ensure scalability and maintainability.",
                 ]}
-                skills={["Javascript", "Next.js", "TailwindCSS", "Redux"]}
+                skills={["Javascript", "Next.js", "Tailwind CSS", "Redux"]}
               />
               <ExperienceSection
                 color="orange-500"
@@ -54,7 +54,7 @@ const page = () => {
                   " Implemented core SEO features: lazy loading, WebP images, clean URLs, meta tags, Open Graph, and accessibility. ",
                   "Set up essential SEO infrastructure that includes robots.txt, dynamic sitemap.xml, and crawlable internal links.",
                 ]}
-                skills={["HTML", "TailwindCSS", "SEO"]}
+                skills={["HTML", "Tailwind CSS", "SEO"]}
               />
               <Separator />
               <Heading heading="About Me" />
