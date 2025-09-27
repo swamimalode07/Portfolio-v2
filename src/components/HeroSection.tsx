@@ -21,7 +21,7 @@ const HeroSection = () => {
             <div className="mt-4 flex flex-wrap gap-3 sm:mt-6 md:mt-8">
             
               <a
-                href="/resume.pdf"
+                href="/Swami_Malode_Resume.pdf"
                 download="Swami-Malode-Resume.pdf"
                 className="font-space-grotesk-500 flex items-center gap-2 rounded-full border-2 border-[#494949] bg-[#1C1C1C] px-4 py-2 text-sm transition-all hover:border-[#5A5A5A] hover:bg-[#2C2C2C] sm:gap-3 sm:px-6 sm:py-2.5 sm:text-base md:px-8 md:py-3"
               >
