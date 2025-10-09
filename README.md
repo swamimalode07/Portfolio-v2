@@ -51,7 +51,7 @@ To run locally:
 
 ```bash
 # Clone the repo
-git clone https://github.com/swamimalode07/portfolio.git
+git clone https://github.com/swamimalode07/swamimalode.online.git
 cd portfolio
 
 # Install dependencies
