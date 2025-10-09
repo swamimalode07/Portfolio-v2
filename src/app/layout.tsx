@@ -5,7 +5,6 @@ import { Space_Grotesk } from "next/font/google";
 import CustomCursor from "@/components/CustomCursor";
 import { Analytics } from "@vercel/analytics/next";
 import { Databuddy } from "@databuddy/sdk";
-import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -64,14 +63,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en">
       <head>
-        <script
-  defer
-  data-website-id="dfid_beW8dBH3HhNXDgUqmUKa8"
-  data-domain="swamimalode.online"
-  data-allow-localhost="true"
-  src="https://datafa.st/js/script.js">
-</script>
-    
         <link rel="canonical" href="https://swamimalode.online" />
 
         <script
