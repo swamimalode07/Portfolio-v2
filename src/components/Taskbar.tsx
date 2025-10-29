@@ -30,7 +30,7 @@ const Taskbar = () => {
         href="https://linkedin.com/in/swamimalode"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+        className="rounded-full bg-[#282828] p-2 transition-transform  text-white dark:text-white stroke-current duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -52,7 +52,7 @@ const Taskbar = () => {
         href="https://github.com/swamimalode07"
         target="_blank"
         rel="noopener noreferrer"
-        className="rounded-full bg-[#282828] p-2 transition-transform duration-300 ease-in-out hover:-translate-y-2 hover:scale-105"
+        className="rounded-full bg-[#282828] p-2 transition-transform duration-300 text-white dark:text-white stroke-current ease-in-out hover:-translate-y-2 hover:scale-105"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -111,7 +111,7 @@ const Taskbar = () => {
             hovered ? "max-w-xs opacity-100" : "max-w-0 opacity-0"
           }`}
         >
-          Open to Work
+          Intern at Conduit
         </span>
       </div>
     </div>
