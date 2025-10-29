@@ -36,18 +36,20 @@ const page = () => {
               <Heading heading="Experience" />
               <ExperienceSection
                 logo="/conduit.png"
-                title="Full Stack  Developer"
+                title="Conduit Commerce"
+                link="https://conduitcommerce.com/"
                 type="Internship"
                 highlights={[
-                  "Working on Frontend and Backend development for Conduit.",
-                  "Working on modular codebase to ensure scalability and maintainability.",
+                  "Contributing to the development of enterprise-grade frontend systems powering modern wholesale e-commerce.",
+                  "Collaborating with the engineering team to build scalable, responsive UI components and optimize performance across the platform."
                 ]}
                 skills={["Javascript", "Next.js", "Tailwind CSS", "Redux"]}
               />
               <ExperienceSection
                 color="orange-500"
-                logo="/mach5.png  "
-                title="Frontend Developer"
+                logo="/mach5.png"
+                link="https://mach5.io/"
+                title="Mach5 Software"
                 type="Freelance"
                 highlights={[
                   "Worked as a Frontend Developer, transforming Figma design into fully responsive, high-performance website ",
