@@ -52,7 +52,7 @@ To run locally:
 ```bash
 # Clone the repo
 git clone https://github.com/swamimalode07/swamimalode.online.git
-cd portfolio
+cd swamimalode.online
 
 # Install dependencies
 pnpm install   # or use npm install if you prefer
