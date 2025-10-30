@@ -52,7 +52,7 @@ const ProjectsCard: React.FC<ProjectsCardProps> = ({
           }}
         >
           <div className="p-2 pt-4 pb-4 sm:p-4 lg:p-4">
-            <div className="text-2xl font-semibold text-white transition-colors duration-300 sm:text-3xl lg:text-5xl">
+            <div className="text-2xl font-normal text-white transition-colors duration-300 sm:text-3xl lg:text-5xl">
               {title}
             </div>
             <div className="sm:text-md mt-1 text-lg text-gray-400 transition-colors duration-300 sm:mt-2 lg:mt-3 lg:text-lg">

@@ -21,7 +21,9 @@
     "next-sitemap": "^4.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0",
-    "react-icons": "^5.5.0"
+    "react-github-calendar": "^4.5.11",
+    "react-icons": "^5.5.0",
+    "react-tooltip": "^5.30.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
